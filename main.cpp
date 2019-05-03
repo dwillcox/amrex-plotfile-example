@@ -35,7 +35,7 @@ int main(int argc,
         {
             ParmParse pp;
             if (!pp.queryarr("n_cells", ncells, 0, AMREX_SPACEDIM))
-                Print() << "n_cells not specified, so using 32 x 32 x 32.\n";
+                Print() << "n_cells not specified, so using 32 cells in each dimension.\n";
 
             if (!pp.query("max_grid_size", max_grid_size))
                 Print() << "max_grid_size not specified, so using 16.\n";
